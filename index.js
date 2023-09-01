@@ -2,18 +2,25 @@
 // A linha acima sem o comentário forçará um erro já no console.log do b
 var a;
 
+a = 2;
+b = 2;
+c = "2";
+
+console.log(soma());
+console.log(typeof b);
+console.log(typeof c);
+
 function soma() {
     var b = 1;
     var c = 1;
     return a + b;
 }
 
-a = 2;
-b = 2;
-c = "2";
-console.log(soma());
-console.log(typeof b);
-console.log(typeof c);
+function soma2() {
+    return b;
+}
+
+console.log(soma2());
 
 // Evita o problema com o hoisting - veja que a variável está
 // sendo declarada depois de ser usada
